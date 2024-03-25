@@ -97,6 +97,7 @@
     .containerC .card {
         width: 230px;
         border-radius: 15px;
+        padding: 10px;
     }
 
     .containerC .card .img-box {

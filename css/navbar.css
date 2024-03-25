@@ -305,7 +305,7 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   width: 100%;
-  color: #fff;
+  color: #0c0b0b;
   font-weight: var(--font-semi-bold);
   padding: 1rem;
   border-radius: .5rem;
