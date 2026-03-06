@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="/css/index.css">
+    <title>TÜGİT - Etkinliklerimiz</title>
+</head>
+<body>
+
+    <!-- HEADER-->
+    <header class="header" id="header">
+        <nav class="nav container target">
+           <a href="#" class="nav__logo target">TÜGİT</a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="/pages/index.html" class="nav__link">Anasayfa</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="/pages/blog.html" class="nav__link">Blog</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="/pages/hakkimizda.html" class="nav__link">Hakkımızda</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="/pages/etkinliklerimiz.html" class="nav__link">Etkinliklerimiz</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="/pages/iletisim.html" class="nav__link">İletişim</a>
+                 </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <div class="nav__actions">
+              <!-- Search button -->
+              <i class="ri-search-line nav__search" id="search-btn"></i>
+
+              <!-- Login button -->
+              <i class="ri-user-line nav__login" id="login-btn"></i>
+
+              <!-- Toggle button -->
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"></i>
+              </div>
+           </div>
+        </nav>
+     </header>
+
+     <!--==================== SEARCH ====================-->
+     <div class="search" id="search">
+        <form action="" class="search__form">
+           <i class="ri-search-line search__icon"></i>
+           <input type="search" placeholder="Ne arıyorsun?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+     </div>
+
+     <!--==================== LOGIN ====================-->
+     <div class="login" id="login">
+        <form action="" class="login__form">
+           <h2 class="login__title">Giriş Yap</h2>
+           
+           <div class="login__group">
+              <div>
+                 <label for="email" class="login__label">Email</label>
+                 <input type="email" placeholder="Email adresini gir" id="email" class="login__input">
+              </div>
+              
+              <div>
+                 <label for="password" class="login__label">Password</label>
+                 <input type="password" placeholder="Şifreni gir" id="password" class="login__input">
+              </div>
+           </div>
+
+           <div>
+              <p class="login__signup">
+                 Hesabın yok mu? <a href="/pages/register.html">Hesap Oluştur</a>
+              </p>
+  
+              <a href="/pages/forgot-password.html" class="login__forgot">
+                 Şifremi Unuttum
+              </a>
+  
+              <button type="submit" class="login__button">Giriş</button>
+           </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+     </div>
+    <!--HEADER FNISHED-->
+    
+  <!--PARALLAX-->
+  <section class="parallax" style="height: 50vh;">
+      <h2 id="text">Etkinliklerimiz</h2>
+      <div class="custom-shape-divider-bottom-1701980703">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+  </section>
+    <!--END PARALLAX -->
+
+    <div class="songelismeler" style="min-height: 50vh; padding: 50px 0;">
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2rem; color: #333;">Geçmiş ve Gelecek Etkinliklerimiz</h2>
+        <div class="wrapper">
+            <div class="card1">
+                <div class="poster"><img src="/images/zire resim kopyası.jpg" alt="Zirve23"></div>
+                <div class="details">
+                    <h1>Zirve 23</h1>
+                    <h2>2023 Sabancı Kültür Merkezi</h2>
+                    
+                    <div class="tags">
+                        <span class="tag">Girişimcilik</span>
+                        <span class="tag">Tecrübe</span>
+                        <span class="tag">TÜGİT</span>
+                    </div>
+                    <p class="desc">
+                        Girişimcilik ekosisteminin dev isimlerini ağırladığımız, tecrübe ve bilgi dolu bir zirve.
+                    </p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="poster"><img src="/images/denemeback2.jpg" alt="Atölye"></div>
+                <div class="details">
+                    <h1>İş Planı Atölyesi</h1>
+                    <h2>Balkan Kongre Merkezi</h2>
+                    <div class="tags">
+                        <span class="tag">Atölye</span>
+                        <span class="tag">Eğitim</span>
+                    </div>
+                    <p class="desc">
+                        Fikirlerinizi nasıl hayata geçireceğinizi uygulamalı olarak öğrendiğimiz teknik iş planı eğitimi.
+                    </p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="poster"><img src="https://i.postimg.cc/pdjRc68d/img-02.png" alt="Networking"></div>
+                <div class="details">
+                    <h1>TÜGİT Tanışma Toplantısı</h1>
+                    <h2>Girişimcilik Merkezi</h2>
+                    <div class="tags">
+                        <span class="tag yellow">Networking</span>
+                        <span class="tag">Tanışma</span>
+                    </div>
+                    <p class="desc">
+                        Yeni dönemde aramıza katılan arkadaşlarımızla tanışma, vizyon paylaşımı ve ekip oyunları.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+                       
+            <!--FOOTER-->
+            <footer>
+        <div class="row">
+            <div class="col">
+                <img src="/images/loodertugit kopyası 2.png" alt="logo" class="logof">
+                <p>Trakya Üniversitesi bünyesinde girişimcilik ruhunu aşılayan, projelere değer katan ve öğrencilere kariyer yollarında rehberlik eden öncü bir topluluğuz.</p>
+            </div>
+            <div class="col">
+                <h3>Kurumsal <div class="underline"><span></span></div></h3>
+                <li><a href="/pages/hakkimizda.html" class="foa">Hakkımızda</a></li>
+                <br>
+                <li><a href="/pages/iletisim.html" class="foa">İletişim</a></li>
+                <br>
+                <li><a href="#" class="foa">Gizlilik Politikası</a></li>
+            </div>
+            <div class="col">
+                <h3>Keşfet<div class="underline"><span></span></div></h3>
+                <li><a href="/pages/blog.html" class="foa">Blog</a></li>
+                <br>
+                <li><a href="/pages/etkinliklerimiz.html" class="foa">Etkinliklerimiz</a></li>
+                <br>
+                <li><a href="#" class="foa">Sıkça Sorulan Sorular</a></li>
+                <br>
+            </div>
+            <div class="col">
+                <h3>Bize Ulaşın<div class="underline"><span></span></div></h3>
+                <form action="POST">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Mail adresini gir" required>
+                    <button type="submit"><i class="fas fa-arrow-alt-circle-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram" style="color: #001e57;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #001e57;"></i>
+                    <i class="fa-brands fa-tiktok" style="color: #001e57;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #001e57;"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy;2024 TÜ Girişimcilik</p>
+    </footer>
+    <!--END FOOTER-->
+
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+  <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+  <script src="/js/parallax.js"></script>
+  <script src="/js/question.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/veriler.js"></script>
+  <script src="/js/scroll.js"></script>
+  
+</body>
+</html>

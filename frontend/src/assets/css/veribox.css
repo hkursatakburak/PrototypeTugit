@@ -1,0 +1,59 @@
+.space{
+    padding: 300px;
+    background-image: url(/images/denemeback2.jpg);
+}
+
+.veriler{
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    height: 200px;
+    background: aqua;
+    border-radius: 70%;
+}
+
+.veri{
+    text-align: center ;
+    background: #fff;
+    width: 450px;
+    border: 1px solid black;
+}
+
+.vral{
+    margin: 40px;
+}
+
+.veriler .veri h1{
+    font-size: 60px;
+    color:blueviolet ;
+}
+.veriler .veri .p{
+    font-size: 40px;
+}
+
+.yv1{
+    border-radius: 60px 0 0 60px;
+}
+
+.yv2{
+    border-radius: 0 60px 60px 0;
+}
+ 
+/*TABLET*/
+@media (max-width: 768px) {
+    .veriler{
+        width: 85%;
+        flex-wrap: wrap;
+        
+    }
+
+    .veriler .veri{
+        width: 50%;        
+    }
+    
+}
+
+/*MOBİLE*/
+@media (max-width: 500px) {
+    
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="/css/index.css">
+    <title>TÜGİT - Kayıt Ol</title>
+</head>
+<body style="background-color: var(--body-color);">
+
+    <!-- HEADER-->
+    <header class="header" id="header" style="position: relative; margin-top: 20px; box-shadow: none; background: transparent;">
+        <nav class="nav container target">
+           <a href="#" class="nav__logo target" style="color: var(--first-color);">TÜGİT</a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="/pages/index.html" class="nav__link">Anasayfa</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="/pages/blog.html" class="nav__link">Blog</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="/pages/hakkimizda.html" class="nav__link">Hakkımızda</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="/pages/etkinliklerimiz.html" class="nav__link">Etkinliklerimiz</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="/pages/iletisim.html" class="nav__link">İletişim</a>
+                 </li>
+              </ul>
+              <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+           </div>
+           <div class="nav__actions">
+              <i class="ri-search-line nav__search" id="search-btn"></i>
+              <i class="ri-user-line nav__login" id="login-btn"></i>
+              <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+           </div>
+        </nav>
+     </header>
+
+     <!--==================== SEARCH/LOGIN MODALS (Hidden by default based on main CSS) ====================-->
+     <div class="search" id="search">
+        <form class="search__form"><i class="ri-search-line search__icon"></i><input type="search" placeholder="Ne arıyorsun?" class="search__input"></form>
+        <i class="ri-close-line search__close" id="search-close"></i>
+     </div>
+
+     <div class="login" id="login">
+        <form class="login__form">
+           <h2 class="login__title">Giriş Yap</h2>
+           <div class="login__group">
+              <div><label class="login__label">Email</label><input type="email" placeholder="Email adresini gir" class="login__input"></div>
+              <div><label class="login__label">Password</label><input type="password" placeholder="Şifreni gir" class="login__input"></div>
+           </div>
+           <div>
+              <p class="login__signup">Hesabın yok mu? <a href="/pages/register.html">Hesap Oluştur</a></p>
+              <a href="/pages/forgot-password.html" class="login__forgot">Şifremi Unuttum</a>
+              <button type="submit" class="login__button">Giriş</button>
+           </div>
+        </form>
+        <i class="ri-close-line login__close" id="login-close"></i>
+     </div>
+
+        <!-- Kayıt Formu -->
+        <section class="sec" style="min-height: 70vh; display: flex; align-items: center; justify-content: center; padding: 50px 20px;">
+              <div style="width: 100%; max-width: 450px; background: var(--container-color); padding: 40px; border-radius: 12px; box-shadow: 0 8px 32px hsla(230, 75%, 15%, .1);">
+                  <h2 style="text-align: center; margin-bottom: 30px; color: var(--title-color);">Hesap Oluştur</h2>
+                  <form action="#" style="display: flex; flex-direction: column; gap: 20px;">
+                      <div>
+                          <label style="display: block; margin-bottom: 8px; font-weight: bold; color: var(--title-color);">Ad Soyad</label>
+                          <input type="text" placeholder="Ad Soyad" style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 6px; background: white;">
+                      </div>
+                      <div>
+                          <label style="display: block; margin-bottom: 8px; font-weight: bold; color: var(--title-color);">Öğrenci Numarası</label>
+                          <input type="text" placeholder="Okul No" style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 6px; background: white;">
+                      </div>
+                      <div>
+                          <label style="display: block; margin-bottom: 8px; font-weight: bold; color: var(--title-color);">E-posta Adresi</label>
+                          <input type="email" placeholder="ornek@mail.com" style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 6px; background: white;">
+                      </div>
+                      <div>
+                          <label style="display: block; margin-bottom: 8px; font-weight: bold; color: var(--title-color);">Şifre</label>
+                          <input type="password" placeholder="Şifre" style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 6px; background: white;">
+                      </div>
+                      <button type="submit" class="login__button" style="margin-top: 10px;">Kayıt Ol</button>
+                      <p style="text-align: center; margin-top: 15px; font-size: 0.9rem;">
+                          Zaten hesabın var mı? <a href="#" id="trigger-login" style="color: var(--first-color); font-weight: bold;">Giriş Yap</a>
+                      </p>
+                  </form>
+              </div>
+          </section>
+                       
+            <!--FOOTER-->
+            <footer>
+        <div class="row">
+            <div class="col">
+                <img src="/images/loodertugit kopyası 2.png" alt="logo" class="logof">
+                <p>Trakya Üniversitesi bünyesinde girişimcilik ruhunu aşılayan, projelere değer katan ve öğrencilere kariyer yollarında rehberlik eden öncü bir topluluğuz.</p>
+            </div>
+            <div class="col">
+                <h3>Kurumsal <div class="underline"><span></span></div></h3>
+                <li><a href="/pages/hakkimizda.html" class="foa">Hakkımızda</a></li>
+                <br>
+                <li><a href="/pages/iletisim.html" class="foa">İletişim</a></li>
+                <br>
+                <li><a href="#" class="foa">Gizlilik Politikası</a></li>
+            </div>
+            <div class="col">
+                <h3>Keşfet<div class="underline"><span></span></div></h3>
+                <li><a href="/pages/blog.html" class="foa">Blog</a></li>
+                <br>
+                <li><a href="/pages/etkinliklerimiz.html" class="foa">Etkinliklerimiz</a></li>
+                <br>
+                <li><a href="#" class="foa">Sıkça Sorulan Sorular</a></li>
+                <br>
+            </div>
+            <div class="col">
+                <h3>Bize Ulaşın<div class="underline"><span></span></div></h3>
+                <form action="POST">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Mail adresini gir" required>
+                    <button type="submit"><i class="fas fa-arrow-alt-circle-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram" style="color: #001e57;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #001e57;"></i>
+                    <i class="fa-brands fa-tiktok" style="color: #001e57;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #001e57;"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy;2024 TÜ Girişimcilik</p>
+    </footer>
+
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+  <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+  <script src="/js/navbar.js"></script>
+  <script>
+      // Extra logic to trigger login modal from the "Giriş Yap" link on register page
+      document.getElementById('trigger-login').addEventListener('click', function(e) {
+          e.preventDefault();
+          document.getElementById('login').classList.add('show-login');
+      });
+  </script>
+</body>
+</html>
